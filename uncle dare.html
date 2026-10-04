@@ -59,7 +59,16 @@
         <li><a href="contact">contact</a></li>
         <li><a href="address">address</a></li>
     </ul>
-
+    <div id="grad1"></div>
+    <div id="grad2"></div>
+    <div id="grad3"></div>
+    <div id="grad4"></div>
+    <div id="overflowtest">
+        the work is too much for the div to handle, so it will overflow and create a scroll bar to allow the user to
+        scroll through the content. This is useful when you have a lot of content that cannot fit within the visible
+        area of the div. You can use CSS properties like overflow: auto; or overflow: scroll; to manage how the overflow
+        is handled.
+    </div>
     <style>
         ul {
             list-style-type: none;
@@ -92,6 +101,36 @@
             font-size: 20px;
             color: white;
             cursor: pointer;
+        }
+
+        #grad1 {
+            width: 500px;
+            height: 1000px;
+            background-image: linear-gradient(to right, black, blue);
+            background-image: blue;
+        }
+        #grad2 {
+            width: 500px;
+            height: 1000px;
+            background-image: linear-gradient(to right, black, blue);
+        }
+        #grad3 {
+            width: 500px;
+            height: 1000px;
+            background-image: linear-gradient(to bottom left, black, blue);
+        }
+        #grad4 {
+            width: 500px;
+            height: 1000px;
+            background-image: linear-gradient(to top right, black, blue);
+        }
+        #overflowtest {
+            width: 500px;
+            height: 100px;
+            overflow: scroll;
+            background-color: black;
+            color: white;
+            padding: 10px;
         }
     </style>
 
